@@ -77,6 +77,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Core Data Saving support
 
     func saveContext () {
+        
+        /*
+         Margiett Notes ->
+         deteling or adding a new post you need to access the saveContext
+         
+         NSMangerObject is very similar to fileManger, is where you go to if you want to save something you need access to this .
+         
+         */
+        
         let context = persistentContainer.viewContext
         if context.hasChanges {
             do {
